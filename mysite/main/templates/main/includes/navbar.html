@@ -5,7 +5,7 @@
         <li><a href="/">Home</a></li>
           {% if user.is_authenticated %}
             <li><a href="/register">{{user.username}}</a></li>
-            <li><a href="/login"><strong>Logout</strong></a></li>
+            <li><a href="/logout"><strong>Logout</strong></a></li>
           {% else %}
             <li><a href="/register">Register</a></li>
             <li><a href="/login"><strong>Login</strong></a></li>
